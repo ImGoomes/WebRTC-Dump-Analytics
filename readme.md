@@ -24,8 +24,7 @@ This **Python analytics script** processes WebRTC internals dump files to extrac
 1. [Installation](#installation)
 2. [Usage](#usage)
 3. [Metrics Explained](#metrics-explained)
-4. [Examples](#examples)
-5. [Contributing](#contributing)
+4[Contributing](#contributing)
 
 ---
 
@@ -60,7 +59,7 @@ This **Python analytics script** processes WebRTC internals dump files to extrac
 
 2. Run the analytics script:
     ```bash
-    python webrtc_analytics.py /path/to/webrtc_internals_dump.txt
+    python webrtc_analytics.py /dump/webrtc_internals_dump.txt
     ```
 
 3. The script will extract the following metrics from the dump file and generate plots for each:
@@ -112,35 +111,6 @@ Here are the metrics the script extracts and visualizes:
 
 10. **Audio Input/Output Levels**:
     - Tracks the levels of audio input and output over time. Ensures that audio is consistently captured and transmitted.
-
----
-
-## Examples
-
-### Sample Usage
-
-1. To analyze the WebRTC dump file:
-    ```bash
-    python webrtc_analytics.py webrtc_internals_dump.txt
-    ```
-
-2. You will see output like this in the terminal:
-    ```
-    Analyzing WebRTC metrics...
-    Extracting Frames Per Second (FPS)...
-    Generating FPS plot...
-    Extracting Packet Loss data...
-    Generating Packet Loss plot...
-    ...
-    Analysis completed.
-    ```
-
-3. Visual plots will be displayed for each metric, such as:
-   - **FPS over Time**
-   - **Packet Loss over Time**
-   - **Round Trip Time (RTT) over Time**
-   - **Jitter over Time**
-   - **Bitrate (Bytes Received) over Time**
 
 ---
 
